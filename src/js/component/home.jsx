@@ -11,18 +11,53 @@ import Footer from "./footer.jsx";
 const Home = () => {
 	return (
 		<div>
-			<Nav />
+			<Nav
+				navName="Navbar"
+				homeName="Home"
+				featuresName="Features"
+				pricingName="Pricing"
+				disabledName="Disabled"
+			/>
 			<div className="container mb-5">
 				<div className="row">
-					<Jumbotron />
-					<Card />
-					<Card />
-					<Card />
-					<Card />
+					<Jumbotron
+						title="Bottom Navbar example"
+						paragraph="This example is a quick exercise to illustrate how the bottom navbar works."
+						buttonNavDocsUrl="/docs/5.0/components/navbar/"
+						LabelUrlJumbo="View navbar docs »"
+					/>
+					<Card
+						titleCard="Wolfy"
+						textCard="Some quick example text to build on the card title and make up the bulk of the card's content."
+						buttonLink="#"
+						LabelUrl="Go somewhere"
+					/>
+					<Card
+						imgUrl="../../img/dog 1.png"
+						titleCard="Wolfy"
+						textCard="Some quick example text to build on the card title and make up the bulk of the card's content."
+						buttonLink="#"
+						LabelUrl="Go somewhere"
+					/>
+					<Card
+						imgUrl="../../img/dog 1.png"
+						titleCard="Wolfy"
+						textCard="Some quick example text to build on the card title and make up the bulk of the card's content."
+						buttonLink="#"
+						LabelUrl="Go somewhere"
+					/>
+					<Card
+						imgUrl="../../img/dog 1.png"
+						titleCard="Wolfy"
+						textCard="Some quick example text to build on the card title and make up the bulk of the card's content."
+						buttonLink="#"
+						LabelUrl="Go somewhere"
+					/>
 				</div>
 			</div>
-			<Footer />
+			<Footer copyright="Copyrigth@ My website 2022" />
 		</div>
 	);
 };
+
 export default Home;

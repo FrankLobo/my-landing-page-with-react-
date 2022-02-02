@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const Nav = () => {
+const Nav = (props) => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-dark">
 			<div className="container-fluid">
 				<a className="navbar-brand text-white" href="#">
-					Navbar
+					{props.navName}
 				</a>
 				<button
 					className="navbar-toggler text-white"
@@ -24,17 +25,17 @@ const Nav = () => {
 								className="nav-link active text-white"
 								aria-current="page"
 								href="#">
-								Home
+								{props.homeName}
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link text-white" href="#">
-								Features
+								{props.featuresName}
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link text-white" href="#">
-								Pricing
+								{props.pricingName}
 							</a>
 						</li>
 						<li className="nav-item">
@@ -43,7 +44,7 @@ const Nav = () => {
 								href="#"
 								tabindex="-1"
 								aria-disabled="true">
-								Disabled
+								{props.disabledName}
 							</a>
 						</li>
 					</ul>
@@ -51,6 +52,14 @@ const Nav = () => {
 			</div>
 		</nav>
 	);
+};
+
+Nav.proptypes = {
+	navName: PropTypes.string,
+	homeName: PropTypes.string,
+	featuresName: PropTypes.string,
+	pricingName: PropTypes.string,
+	disabledName: PropTypes.string,
 };
 
 export default Nav;
