@@ -3,7 +3,7 @@ import React from "react";
 const Nav = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-dark">
-			<div className="container-fluid ">
+			<div className="container-fluid">
 				<a className="navbar-brand text-white" href="#">
 					Navbar
 				</a>
@@ -18,7 +18,7 @@ const Nav = () => {
 					<span className="navbar-toggler-icon text-white"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNav">
-					<ul className="navbar-nav">
+					<ul className="navbar-nav ms-auto">
 						<li className="nav-item">
 							<a
 								className="nav-link active text-white"
