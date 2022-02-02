@@ -12,7 +12,11 @@ const Card = () => {
 							"Some quick example text to build on the card title and make up the bulk of the card's content."
 						}
 					</p>
-					<a href="#" className="btn btn-primary">
+				</div>
+				<div className="card-footer text-muted">
+					<a
+						href="#"
+						className="btn btn-primary d-flex justify-content-center">
 						Go somewhere
 					</a>
 				</div>

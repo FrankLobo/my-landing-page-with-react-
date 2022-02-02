@@ -2,7 +2,7 @@ import React from "react";
 
 const Jumbotron = () => {
 	return (
-		<div className="bg-light p-5 rounded mt-3">
+		<div className="bg-light p-5 rounded mb-4">
 			<h1>Bottom Navbar example</h1>
 			<p className="lead">
 				This example is a quick exercise to illustrate how the bottom
