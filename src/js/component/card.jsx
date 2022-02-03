@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import image from "../../img/dog1.png";
 import "../../styles/index.css";
+// import image from "/dog1.png";
 
 const Card = (props) => {
 	return (
 		<div className="col-md-3">
 			<div className="card">
-				<img src={image} className="card-img-top" alt="..." />
+				<img src={props.image} className="card-img-top" alt="..." />
 				<div className="card-body">
 					<h5 className="card-title">{props.titleCard}</h5>
 					<p className="card-text">{props.textCard}</p>
@@ -26,6 +26,7 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
+	image: PropTypes.string,
 	titleCard: PropTypes.string,
 	textCard: PropTypes.string,
 	buttonLink: PropTypes.string,
